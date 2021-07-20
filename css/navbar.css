@@ -1,0 +1,64 @@
+#navbar {
+	position: fixed;
+	top: 0;
+	font-family: Sans-serif;	
+	width: 100%;
+	height: 80px;
+	background-color: #333;
+	box-shadow: rgba(255,255,255,.2) 0px -5px 5px inset;
+	z-index: 30;
+}
+
+#navbar h2 {
+	display: inline-block;
+	font-family: Sans-serif;
+	font-size: 30px;
+	color: white;
+	padding: 10px;
+	text-align: left;
+	margin: 0px;
+}
+
+#navbar p {
+	position: absolute;
+	top: 45px;
+	left: 15px;
+	margin: 0px;
+	font-size: 20px;
+	color: grey;
+}
+
+#navbar a {
+	position: relative;
+	top: 30px;
+	margin: 10px;
+	float: right;
+	color: rgb(110, 155, 110);
+	font-size: 20px;
+	margin: 10px;
+	text-decoration: none;
+	transition: color 0.4s;
+}
+
+#navbar a::before {
+	position: absolute;
+	top: 25px;
+	display: inline-block;
+	content: "";
+	background-color: white;
+	height: 2px;
+	width: 10px;
+	border-radius: 2px;
+	transition: width 1s, background-color 1s;
+}
+
+#navbar a:hover::before {
+	width: 100%;
+	background-color: orange;
+}
+
+#navbar a:hover {
+	color: white;
+}
+
+

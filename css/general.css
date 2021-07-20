@@ -1,0 +1,169 @@
+body,html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background-image: url("./../img/background.png");
+	background-attachment: fixed;
+}
+
+#dashboard {
+	position: relative;
+	width: 100%;
+	top: 100px;
+}
+
+.item_wrapper {
+	display: inline-block;
+	vertical-align: top;
+	padding: 15px;
+	margin: 0 0 15px 15px;
+	background-color: rgba(255,255,255,0.4);
+	border-radius: 5px;
+	height: 210px;
+}
+
+ul {
+	margin: 10px;
+	padding: 0;
+}
+
+#dashboard h2,
+.item_wrapper p {
+	display: inline-block;
+	color: rgb(0,0,0);
+	margin: 0px;
+	margin-right: 10px;
+
+}
+
+#dashboard a {
+	text-decoration: none;
+}
+
+#dashboard img {
+	display: block;
+}
+
+#content {
+	text-align: center;
+	position: relative;
+	top: 100px;
+	width: 100%;
+	height: auto;
+}
+
+h1.game_title {
+	padding: 10px;
+	margin-right: 20%;
+	margin-left: 20%;
+	border: 2px solid black;
+	background-color: tomato;
+	box-shadow: 0px 5px 10px #888;
+	border-radius: 25px;
+	text-align: center;
+	font-size: 40px;
+}
+
+#description h2 {
+	font-size: 30px;
+}
+
+#description p {
+	font-size: 20px;
+}
+
+#description {
+	display: inline-block;
+	vertical-align: top;
+	margin: 20px;
+	padding: 10px;
+	width: 640px;
+	height: auto;
+	background-color: rgba(255,220,220,.6);
+	border-radius: 10px;
+}
+
+#pop {
+	background-color: #fefefe;
+	margin: 15% auto 15% auto; /* 15% from the top, 15% from the bottom and centered */
+	animation: popup;
+	animation-duration: 0.6s;
+	width: 304px;
+	height: 224px;
+	transform: scale(2);
+}
+
+@keyframes popup {
+    from {transform: scale(0)}
+    to {transform: scale(2)}
+}
+
+#game {
+    width: 304px;
+    height: 224px;
+}
+
+#demo_wrapper{
+	display: none;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 101;
+}
+
+.pay, .remove, .add {
+	display: inherit;
+	text-decoration: none;
+	height: 20px;
+	border-radius: 5px;
+	margin: 5px;
+	border: 1px solid black;
+}
+
+.pay {
+	background-color: yellow;
+	width: 32px;
+}
+
+.remove {
+	background-color: red;
+	width: 55px;
+}
+
+.add {
+	background-color: rgb(0,255,0);
+	width: 60px;
+}
+
+.pay p, .remove p, .add p {
+	color: black;
+	font-size: 14px;
+	padding: 2px;
+}
+
+.pay:active, .remove:active, .add:active {
+	box-shadow: 3px 3px rgba(0,0,0,0.1) inset;
+}
+
+#no_boughts {
+	display: inline-block;
+	position: relative;
+	top: 100px;
+	font-size: 20px;
+	background-color: rgba(255,255,255,0.5);
+	padding: 10px;
+	margin-left: 20px;
+	border-radius: 5px;
+}
+
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
