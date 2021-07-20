@@ -1,5 +1,5 @@
 <?php
-	require_once "/DbManager.php";
+	require_once "DbManager.php";
 
 	function getGames(){
 		global $database;
