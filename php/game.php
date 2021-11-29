@@ -69,7 +69,7 @@
 
 		<section id='description'>
 			<h2>Descrizione del gioco</h2>
-			<?php echo '<p>'.htmlentities($row['descrizione'], ENT_COMPAT, 'ISO8859-1').'</p>' ?>
+			<?php echo '<p>'.htmlentities($row['descrizione'], ENT_COMPAT, 'UTF-8').'</p>' ?>
 		</section>
 
 		<div id="buttons" class="noselect">

@@ -92,6 +92,6 @@ var nemico7 = new Enemy(1450,165,2);
 window.onload = function(){
 	canvas = document.getElementById('gioco');
 	ctx = canvas.getContext('2d');
-	intervalID = setInterval(play,1000/30);
+	intervalID = setInterval(play,1000/40);
 }
 

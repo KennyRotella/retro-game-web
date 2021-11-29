@@ -16,6 +16,8 @@
 	function login($username, $password){   
 		if ($username != null && $password != null){
 			$result = authenticate($username, $password);
+			if ($result == -1)
+				return 'Username e/o password non validi.';
     		if (mysqli_num_rows($result) == 1){
     			session_start();
     			$userRow = $result->fetch_assoc();
